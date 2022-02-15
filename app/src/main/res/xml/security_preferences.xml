@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        app:key="pass_enabled"
+        app:title="@string/pass_enabled" />
+    <EditTextPreference
+        app:dependency="pass_enabled"
+        app:key="signature"
+        app:title="@string/signature_title" />
+
+</PreferenceScreen>
